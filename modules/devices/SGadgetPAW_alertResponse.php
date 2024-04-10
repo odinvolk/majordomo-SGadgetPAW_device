@@ -50,19 +50,19 @@ switch ($id) {
                if ($json['state'] == 'Да') { say('Принят - Да от - '.$desc, $msl); } //callMethodSafe('NobodyHomeMode.activate');
                if ($json['state'] == 'Нет') { say('Принят - Нет от - '.$desc, $msl); }
                if ($json['state'] == 'Пофиг') { say('Принят - Пофиг от - '.$desc, $msl); }
-                break;
+        break;
     case '45': say('Принят id - '.$json['id'].' для устройства '.$desc, $msl);
                if ($json['state'] == 'Да') { say('Принят - Да от - '.$desc, $msl); }
                if ($json['state'] == 'Нет') { say('Принят - Нет от - '.$desc, $msl); }
                if ($json['state'] == 'Возможно') { say('Принят - Возможно от - '.$desc, $msl); }
-                break;
+        break;
     case '85': say('Принят id - '.$json['id'].' для устройства '.$desc, $msl);
                if ($json['state'] == 'Да') { say('Принят - Да от - '.$desc, $msl); }
                if ($json['state'] == 'Нет') { say('Принят - Нет от - '.$desc, $msl); }
                if ($json['state'] == 'Пофиг') { say('Принят - Пофиг от - '.$desc, $msl); }
-                break;
-//     default: //say('Принят неизвесный id - '.$json['id'].' для устройства '.$desc, $msl);
-//                break;
+        break;
+    default: //say('Принят неизвесный id - '.$json['id'].' для устройства '.$desc, $msl);
+        break;
 }
 //----------------------- данные
 //{"alert":"Turn the lights off?","title":"Свет","negative":"Нет","positive":"Да","neutral":"Пофиг","sound":"false","id":24}');
